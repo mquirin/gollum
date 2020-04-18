@@ -54,6 +54,7 @@
         <option selected="selected">default</option>
         <option>vim</option>
         <option>emacs</option>
+        <option>native</option>
       </select>
       <label for="format">Markup</label>
       <select id="wiki_format" name="format" class="form-select">
@@ -97,9 +98,9 @@
       </div>
     </div>
   </div>
-    <textarea id="gollum-editor-body" class="form-control"
+    <textarea id="gollum-editor-body" class="form-control" style="width: 100%;"
      data-markup-lang="{{format}}" name="content" class="mousetrap">{{content}}</textarea>
-    <div id="uploading">
+    <div id="uploading" style="none;">
       <p><div class="dotted-spinner"></div> Uploading file...</p>
     </div>
 
